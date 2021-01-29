@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PotellorMotion : MonoBehaviour
 {
-    public float rotationSpeed;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +15,7 @@ public class PotellorMotion : MonoBehaviour
     void Update()
     {
         // rotate
-        transform.Rotate(Vector3.forward, rotationSpeed);
+        transform.Rotate(0, 0, 50 * Time.deltaTime);
         
     }
 }
